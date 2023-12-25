@@ -225,11 +225,12 @@ Install Node.js version 14+ (latest LTS release is recommended), by either downl
     yarn wasm-prod
     ```
 
-   This step might take a lot of time. The WebAssembly module and accompanying Typescript code should have been generated into  `packages_rs/nextclade-web/src/gen/`. The web application should be able to find it there.
+   This step might take a lot of time. If it finishes early with an issue of not having run-s - try, ```npm install run-s```
+    The WebAssembly module and accompanying Typescript code should have been generated into  `packages_rs/nextclade-web/src/gen/`. The web application should be able to find it there.
 
    Repeat this step every time you are touching Rust code.
 
-7. Build and serve the web app
+8. Build and serve the web app
 
    We are going to run a development web server, which runs continuously (it does not yield terminal prompt until you stop it). It's convenient to do it in a separate terminal instance from WebAssembly module build to allow rebuilding the app and the module independently.
 

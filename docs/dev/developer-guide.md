@@ -203,8 +203,8 @@ Install Node.js version 14+ (latest LTS release is recommended), by either downl
    > Furthermore, you will need to set the following environment variables before invoking `yarn wasm-prod`:
    >
    > ```bash
-   > export CC=/opt/homebrew/opt/llvm/bin/clang
-   > export AR=/opt/homebrew/opt/llvm/bin/llvm-ar
+   > export CC=/usr/local/opt/llvm/bin/clang
+   > export AR=/usr/local/opt/llvm/bin/llvm-ar
    > ```
 
     </details>
